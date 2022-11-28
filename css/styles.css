@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+/* - Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'public sans', sans-serrif;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    background-color: white;
+}
+
+header img {
+    width: 10%;
+    height: 10%;
+}
+
+.menu {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav div {
+    padding-bottom: 20px;
+}
+
+nav div:hover {
+    border-bottom: 2px solid hsl(136, 65%, 51%);
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    font-size: 14px;
+}
+
+button {
+    padding: 1vw;
+    font-size: 14px;
+    font-weight: 600;
+    width: 11vw;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+/* header style complete */
+
+.first-cont {
+    display: flex;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: 45%;
+    background-position-x: 96%;
+    background-size: 54%;
+    overflow-x: hidden;
+    padding-left: 7em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+    width: 50%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 200;
+    width: 46%;
+    color: hsl(233, 26%, 24%);
+}
+
+p {
+    font-size: 16px;
+    color: grey;
+    width: 66%;
+}
+
+.mockup {
+    width: 50%;
+}
+
+.mockup img {
+    width: 100%;
+}
+
+/* .first-cont styled */
+.mid-cont {
+    background-color: hsl(220, 16%, 96%);
+    padding: 60px 50px;
+    position: relative;
+    bottom: 133px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reason h2 {
+    font-weight: 400;
+    font-size: 25px;
+    color: hsl(233, 26%, 24%);
+}
+
+.reason p {
+    width: 45%;
+}
+
+aside {
+    display: flex;
+    gap: 24px;
+
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 20%;
+}
+
+aside section p {
+    width: 18vw;
+}
+
+aside img {
+    width: 20%;
+}
+
+/* .mid-cont styled */
+.last-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    bottom: 96px;
+    padding: 0 50px;
+}
+
+.art {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px grey;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.claire {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.claire p {
+    font-size: 14px;
+    width: 82%;
+}
+
+.claire h5:hover {
+    color: rgb(3, 206, 155);
+}
+
+/* end of main */
+footer {
+    background-color: hsl(233, 26%, 24%);
+    padding: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    gap: 12em;
+}
+
+.jj {
+    display: flex;
+    gap: 8em;
+}
+
+.ft-one {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.logo_img {
+    background-color: white;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.contact,
+.ca-po {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+
+}
+
+.contact :hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.ca-po :hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.last-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    color: hsl(233, 8%, 62%);
+}
+
+@media only screen and (max-width: 575px) {
+    header {
+        justify-content: flex-start;
+        gap: 15em;
+        align-items: center;
+    }
+
+    header img {
+        width: 30%;
+        text-align: left;
+    }
+
+    header nav,
+    button {
+        display: none;
+    }
+
+    .menu {
+        visibility: visible;
+    }
+
+    .menu img {
+        width: 80%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-cont {
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: -2vw 27%;
+        background-size: 32em;
+        overflow-x: hidden;
+        gap: 2em;
+        padding: 0px;
+        align-items: flex-start;
+        margin-bottom: 36vh;
+
+    }
+
+    .mockup {
+        width: 90%;
+    }
+
+    .text {
+        width: 74%;
+        gap: 22px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text h1 {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .text p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .text button {
+        display: block;
+        width: 50%;
+        padding: 2.5vw;
+    }
+
+    .reason {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .reason h2 {
+        font-size: 30px;
+        width: 45%;
+        text-align: center;
+    }
+
+    .reason p {
+        width: 87%;
+        text-align: center;
+    }
+
+    aside {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside section {
+        width: 100%;
+        align-items: center;
+    }
+
+    aside section p {
+        width: 75vw;
+        text-align: center;
+    }
+
+    .last-cont h4 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 300;
+        color: hsl(233, 26%, 24%);
+    }
+
+    .art {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .claire {
+        padding: 35px;
+        width: 85vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .jj {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .ft-one {
+        gap: 2em;
+    }
+
+    .contact,
+    .ca-po {
+        gap: 1em;
+        color: aliceblue;
+    }
+
+    nav a {
+        color: aliceblue;
+    }
+
+    footer button {
+        display: inline;
+        width: 67%;
+        padding: 1em;
+    }
+}
