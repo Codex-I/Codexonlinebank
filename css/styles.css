@@ -290,6 +290,9 @@ i:hover {
     width: 100%;
 }
 
+
+
+
 @media only screen and (max-width: 575px) {
     header {
         justify-content: flex-start;
