@@ -459,3 +459,84 @@ i:hover {
         padding: 1em;
     }
 }
+ /* end of mobile */
+ @media screen and (max-width: 767px) and (min-width: 576px){
+    body {
+        width: 117vw;
+    }
+    header {
+        background-color: aquamarine;
+        width: 118vw;
+        padding: 14px;
+        align-items: baseline;
+    } 
+    header img {
+        width: 15%;
+    }
+     button {
+        width: 25%;
+    padding: 1em;
+    }
+    .first-cont {
+        padding-left: 2em;
+        gap: 1em;
+    }
+    .first-cont h1 {
+        font-size: 28px;
+        width: 70%;
+    }
+    .first-cont p {
+        font-size: 14px;
+    width: 100%;
+    }
+    .mid-cont {
+        bottom: 73px;
+    }
+    .text button {
+        width: 50%;
+    }
+    .reason p {
+        width: 60%;
+    }
+    aside section {
+        width: 25%;
+    }
+    aside img {
+        width: 50%;
+    }
+    aside section p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .last-cont {
+        position: relative;
+        bottom: 48px;
+        padding: 0 12px;
+    }
+    .art {
+        gap: 10px;
+    }
+    .claire h5 {
+        font-size: 14px;
+        width: 100%;
+    }
+    .claire p {
+        width: 100%;
+        font-size: 11px;
+    }
+    footer{
+        width: 118vw;
+        gap: 1em;
+    }
+    .jj {
+        gap: 2em;
+    }
+    .last-btn {
+        gap: 1em;
+        font-size: 13px;
+    }
+    .last-btn button {
+        width: 70%;
+        padding: 6%;
+    }
+ }
