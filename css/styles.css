@@ -39,7 +39,7 @@ header img {
 }
 
 .menu {
-    visibility: hidden;
+    display: none;
 }
 
 nav {
@@ -275,10 +275,12 @@ i:hover {
         justify-content: flex-start;
         gap: 15em;
         align-items: center;
+        width: 100vw;
+        padding: 25px;
     }
 
     header img {
-        width: 30%;
+        width: 40%;
         text-align: left;
     }
 
@@ -288,16 +290,15 @@ i:hover {
     }
 
     .menu {
-        visibility: visible;
+        display: flex;
     }
 
     .menu img {
-        width: 80%;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
+        width: 7%;
+        height: 23%;
+        position: absolute;
+        left: 88%;
+        top: 37%;
     }
 
     .first-cont {
@@ -305,42 +306,46 @@ i:hover {
         flex-direction: column-reverse;
         background-image: url(../images/bg-intro-mobile.svg);
         background-repeat: no-repeat;
-        background-position: -2vw 27%;
-        background-size: 32em;
+        background-position: 0vw 12vh;
+        background-size: 100%;
         overflow-x: hidden;
         gap: 2em;
-        padding: 0px;
-        align-items: flex-start;
+        padding: 10px;
         margin-bottom: 36vh;
 
     }
 
     .mockup {
-        width: 90%;
+        width: 100%;
     }
 
     .text {
-        width: 74%;
+        width: 100%;
         gap: 22px;
         align-items: center;
         text-align: center;
     }
 
     .text h1 {
-        width: 80%;
-        font-size: 40px;
+        width: 100%;
+        font-size: 34px;
     }
 
     .text p {
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.5;
     }
 
     .text button {
         display: block;
         width: 50%;
-        padding: 2.5vw;
+        padding: 3.5vw;
+    }
+
+    .mid-cont {
+        padding: 60px 15px;
+        gap: 2em;
     }
 
     .reason {
@@ -348,17 +353,19 @@ i:hover {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        width: 100%;
     }
 
     .reason h2 {
-        font-size: 30px;
-        width: 45%;
+        font-size: 24px;
+        width: 50%;
         text-align: center;
     }
 
     .reason p {
-        width: 87%;
+        width: 100%;
         text-align: center;
+        font-size: 15px;
     }
 
     aside {
@@ -371,15 +378,25 @@ i:hover {
         align-items: center;
     }
 
+    aside section h3 {
+        font-weight: 400;
+        color: hsl(233, 26%, 24%);
+    }
+
     aside section p {
-        width: 75vw;
+        width: 100%;
         text-align: center;
+        font-size: 15px;
+    }
+
+    .last-cont {
+        padding: 0 6%;
     }
 
     .last-cont h4 {
         text-align: center;
-        font-size: 2em;
-        font-weight: 300;
+        font-size: 1.5em;
+        font-weight: 400;
         color: hsl(233, 26%, 24%);
     }
 
@@ -394,8 +411,19 @@ i:hover {
     }
 
     .claire {
-        padding: 35px;
-        width: 85vw;
+        padding: 10%;
+        width: 100%;
+    }
+
+    .claire p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .claire h5 {
+        font-weight: 400;
+        font-size: 16px;
+        width: 74vw;
     }
 
     footer {
