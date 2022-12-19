@@ -515,7 +515,7 @@ i:hover {
 }
 
 /* end of mobile */
-@media screen and (max-width: 767px) and (min-width: 576px) {
+@media screen and (max-width: 996px) and (min-width: 576px) {
 
     header {
         padding: 14px;
