@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
-/* - Dark Blue: hsl(233, 26%, 24%)
-- Lime Green: hsl(136, 65%, 51%)
-- Bright Cyan: hsl(192, 70%, 51%)
-- Grayish Blue: hsl(233, 8%, 62%)
-- Light Grayish Blue: hsl(220, 16%, 96%)
-- Very Light Gray: hsl(0, 0%, 98%)
-- White: hsl(0, 0%, 100%) */
 
 * {
     padding: 0;
@@ -18,7 +11,6 @@
 body {
     position: relative;
     overflow-x: hidden;
-    width: 100vw;
 }
 
 header {
@@ -29,7 +21,7 @@ header {
     padding: 20px 20px 20px 20px;
     position: absolute;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     background-color: white;
 }
 
@@ -52,7 +44,7 @@ nav div {
 }
 
 nav div:hover {
-    border-bottom: 2px solid hsl(136, 65%, 51%);
+    border-bottom: 4px solid hsl(136, 65%, 51%);
 }
 
 nav a {
@@ -61,11 +53,16 @@ nav a {
     font-size: 14px;
 }
 
+nav a:hover {
+    color: black;
+    font-weight: 500;
+}
+
 button {
     padding: 1vw;
     font-size: 14px;
     font-weight: 600;
-    width: 11vw;
+    width: 9rem;
     color: white;
     border: none;
     border-radius: 20px;
@@ -73,7 +70,7 @@ button {
 }
 
 button:hover {
-    opacity: 0.5;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
 }
 
 /* header style complete */
@@ -83,7 +80,7 @@ button:hover {
     background-image: url(../images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position-y: -14vh;
-    background-position-x: 122%;
+    background-position-x: 157%;
     background-size: 69%;
     overflow-x: hidden;
     padding-left: 8em;
@@ -98,9 +95,9 @@ button:hover {
 }
 
 h1 {
-    font-size: 40px;
-    font-weight: 200;
-    width: 50%;
+    font-size: 54px;
+    font-weight: 500;
+    width: 76%;
     color: hsl(233, 26%, 24%);
 }
 
@@ -116,12 +113,14 @@ p {
 
 .mockup img {
     width: 100%;
+    position: relative;
+    left: 78px;
 }
 
 /* .first-cont styled */
 .mid-cont {
     background-color: hsl(220, 16%, 96%);
-    padding: 60px 133px;
+    padding: 93px 133px;
     position: relative;
     bottom: 133px;
     z-index: -1;
@@ -138,7 +137,7 @@ p {
 
 .reason h2 {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
     color: hsl(233, 26%, 24%);
 }
 
@@ -151,21 +150,28 @@ aside {
     display: flex;
 }
 
+aside>div {
+    width: 50%;
+    display: flex;
+}
+
 aside section {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 25%;
+    width: 100%;
 }
 
 aside section p {
     width: 83%;
     font-size: 14px;
+    line-height: 1.4;
 }
 
 aside img {
     width: 25%;
 }
+
 aside h3 {
     font-weight: 400;
     color: hsl(233, 26%, 24%);
@@ -178,11 +184,12 @@ aside h3 {
     gap: 50px;
     position: relative;
     bottom: 67px;
-    padding: 0 122px;
+    padding: 0 122px 50px 122px;
 }
+
 .last-cont h4 {
     font-size: 37px;
-    font-weight: 300;
+    font-weight: 500;
     color: hsl(233, 26%, 24%);
 }
 
@@ -196,7 +203,7 @@ article {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
+    background-color: #fdfdfd;
 }
 
 article img {
@@ -211,17 +218,21 @@ article img {
     flex-direction: column;
     gap: 10px;
 }
+
 .athr {
     font-size: 11px;
 }
+
 .claire p {
-    font-size: 13px;
+    font-size: 14px;
     width: 100%;
 }
+
 .claire h5 {
     font-weight: 400;
     color: hsl(233, 26%, 24%);
 }
+
 .claire h5:hover {
     color: rgb(3, 206, 155);
 }
@@ -265,7 +276,8 @@ i:hover {
     flex-direction: column;
     gap: 0.8em;
 }
-.contact a, 
+
+.contact a,
 .ca-po a {
     color: white;
 }
@@ -285,6 +297,7 @@ i:hover {
     gap: 1em;
     color: hsl(233, 8%, 62%);
 }
+
 .last-btn p {
     font-size: 13px;
     width: 100%;
@@ -332,6 +345,7 @@ i:hover {
         background-position: 0vw 12vh;
         background-size: 100%;
         overflow-x: hidden;
+        overflow-y: hidden;
         gap: 2em;
         padding: 10px;
         margin-bottom: 36vh;
@@ -340,6 +354,11 @@ i:hover {
 
     .mockup {
         width: 100%;
+    }
+
+    .mockup img {
+        left: 0;
+        margin-top: -53px;
     }
 
     .text {
@@ -364,6 +383,7 @@ i:hover {
         display: block;
         width: 50%;
         padding: 3.5vw;
+        border-radius: 30px;
     }
 
     .mid-cont {
@@ -380,8 +400,8 @@ i:hover {
     }
 
     .reason h2 {
-        font-size: 24px;
-        width: 50%;
+        font-size: 31px;
+        width: 60%;
         text-align: center;
     }
 
@@ -394,6 +414,12 @@ i:hover {
     aside {
         flex-direction: column;
         align-items: center;
+    }
+
+    aside>div {
+        width: 100%;
+        flex-direction: column;
+        gap: 2em;
     }
 
     aside section {
@@ -413,13 +439,13 @@ i:hover {
     }
 
     .last-cont {
-        padding: 0 6%;
+        padding: 0 8%;
     }
 
     .last-cont h4 {
         text-align: center;
-        font-size: 1.5em;
-        font-weight: 400;
+        font-size: 1.8em;
+        font-weight: 500;
         color: hsl(233, 26%, 24%);
     }
 
@@ -476,90 +502,130 @@ i:hover {
         color: aliceblue;
     }
 
+    .last-btn {
+        align-items: center;
+    }
+
     footer button {
         display: inline;
-        width: 67%;
+        width: 100%;
+        border-radius: 30px;
         padding: 1em;
     }
 }
- /* end of mobile */
- @media screen and (max-width: 767px) and (min-width: 576px){
-    body {
-        width: 117vw;
-    }
+
+/* end of mobile */
+@media screen and (max-width: 767px) and (min-width: 576px) {
+
     header {
-        background-color: aquamarine;
-        width: 118vw;
         padding: 14px;
         align-items: baseline;
-    } 
+    }
+
     header img {
         width: 15%;
     }
-     button {
+
+    button {
         width: 25%;
-    padding: 1em;
+        padding: 1em;
+        border-radius: 30px;
     }
+
     .first-cont {
         padding-left: 2em;
         gap: 1em;
     }
+
     .first-cont h1 {
-        font-size: 28px;
-        width: 70%;
+        font-size: 40px;
+        width: 100%;
     }
+
     .first-cont p {
         font-size: 14px;
-    width: 100%;
+        width: 100%;
     }
+
     .mid-cont {
         bottom: 73px;
+        padding: 133px 0 133px 45px;
     }
+
     .text button {
         width: 50%;
     }
+
     .reason p {
         width: 60%;
     }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
     aside section {
         width: 25%;
     }
+
+    aside>div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+    }
+
     aside img {
         width: 50%;
     }
+
     aside section p {
         width: 100%;
         font-size: 14px;
     }
+
     .last-cont {
         position: relative;
         bottom: 48px;
         padding: 0 12px;
     }
+
     .art {
         gap: 10px;
     }
+
+    .claire {
+        padding: 19px;
+    }
+
     .claire h5 {
-        font-size: 14px;
-        width: 100%;
-    }
-    .claire p {
-        width: 100%;
         font-size: 11px;
+        width: 100%;
+        font-weight: 600;
     }
-    footer{
-        width: 118vw;
+
+    .claire p {
+        font-size: 10px;
+    }
+
+    footer {
         gap: 1em;
     }
+
     .jj {
         gap: 2em;
     }
+
     .last-btn {
         gap: 1em;
         font-size: 13px;
     }
+
     .last-btn button {
         width: 70%;
         padding: 6%;
     }
- }
+}
